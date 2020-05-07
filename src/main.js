@@ -47,7 +47,8 @@ if (crashReporterDirectory) {
 			app.exit(1);
 		}
 	}
-	console.log(`Setting temp directory to be '${crashReporterDirectory}'`);
+	
+	console.log(`Found --crash-reporter-directory argument. Setting temp directory to be '${crashReporterDirectory}'`);
 	app.setPath('temp', crashReporterDirectory);
 }
 
